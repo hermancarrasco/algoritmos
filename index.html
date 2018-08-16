@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Ordenamiento por Selección</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Algoritmo2</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Navbar Link1</a></li>
+        <li><a href="#">Navbar Link2</a></li>
+        <li><a href="#">Navbar Link3</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link4</a></li>
+        <li><a href="#">Navbar Link5</a></li>
+        <li><a href="#">Navbar Link6</a></li>
+        <li><a href="#">Navbar Link7</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Algoritmo de Ordenamiento por Selección</h1>
+      <div class="row center">
+      <p>
+        <input class="with-gap" name="group1" type="radio" id="test1" value="1" />
+        <label for="test1">Burbuja</label>
+      
+        <input class="with-gap" name="group1" type="radio" id="test2" value="2" />
+        <label for="test2">Selección</label>
+     
+        <input class="with-gap" name="group1" type="radio" id="test3" value="3" />
+        <label for="test3">Inserción</label>
+      
+        <input class="with-gap" name="group1" type="radio" id="test4" value="4" />
+        <label for="test4">Quick Sort</label>
+
+        <input class="with-gap" name="group1" type="radio" id="test5" value="5" />
+        <label for="test5">Shell</label>
+      </p>
+        <h5 class="header col s12 light">¿Cuántos números?</h5>
+      </div>
+      <div class="row center">
+
+      <div class="input-field col s12">
+        <input id="txtNumeros" type="text" class="validate center" onKeyPress="return solonumeros(event)">
+        <label for="icon_prefix">Números</label>
+         <a href="#" id="btnAceptar" class="btn-large waves-effect waves-light orange">Aceptar</a>
+      </div>
+       
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+       
+      <div class="col s12 m12 l12 center" id="columna1">
+        
+      </div>
+        
+      </div>
+
+     </div><!-- cierre row-->
+      
+      <div class="row center">
+        <a href="#" id="btnOrdenar" class="btn-large waves-effect waves-light orange">Ordenar</a>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+      <div class="section center">
+
+      <div class="row center" >
+          <div class="col s12 m12 l12" id="proceso">
+              
+          </div>
+      </div>
+    
+
+      <div class="row center" >
+          <div class="col s12 m12 l12" id="resultado">
+              
+          </div>
+      </div>
+          
+    
+    </div>
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/script.js"></script>
+<script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+
+  </body>
+</html>
